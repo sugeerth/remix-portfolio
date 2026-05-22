@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script>
-      // Single Page App redirect for GitHub Pages
-      const path = window.location.pathname;
-      const repo = '/remix-portfolio';
-      if (path.startsWith(repo)) {
-        const newPath = path.replace(repo, '') || '/';
-        sessionStorage.setItem('redirect', newPath + window.location.search);
-      }
-      window.location.replace(repo + '/');
-    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="refresh" content="0; url=https://sugeerth.github.io/" />
+    <link rel="canonical" href="https://sugeerth.github.io/" />
+    <meta name="robots" content="noindex" />
+    <title>Redirecting to sugeerth.github.io</title>
+    <script>location.replace("https://sugeerth.github.io/");</script>
   </head>
   <body>
-    Redirecting...
+    <p>
+      This site has moved. If you are not redirected automatically, visit
+      <a href="https://sugeerth.github.io/">https://sugeerth.github.io/</a>.
+    </p>
   </body>
 </html>
